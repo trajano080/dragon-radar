@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Dragon Radar</string>
+    <string name="DetectionButton">Scan Dragon Ball</string>
+    <string name="returnButton">Back</string>
+    <string name="NumberOfBalls">Enter number of Dragon Balls</string>
+    <string name="starGame">START GAME</string>
+    <string name="starNewGame">START\nNEW GAME</string>
+    <string name="launchGame">LAUNCH GAME</string>
+    <string name="randomize">Randomize Coordinates</string>
+    <string name="radius">Enter radius (m)</string>
+    <string name="coordinates">Enter Coordinates or generate randomly around a radius:</string>
+    <string name="coordinateN">Coordinate N</string>
+    <string name="coordinateW">Coordinate W</string>
+    <string name="location">\n\n\n\n\n\n\nWait.\nDetermining location...</string>
+    <string name="founBall">Found Ball</string>
+    <string name="progressImage">progress Image</string>
+</resources>

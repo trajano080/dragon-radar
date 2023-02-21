@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateGame"
+    android:background="@drawable/dragon">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="236dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@android:color/black"
+        android:text="@string/launchGame"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="258dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@android:color/black"
+        android:text="@string/randomize"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/radius"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="#dcdcdc"
+        android:gravity="center_horizontal"
+        android:hint="@string/radius"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="352dp"
+        android:layout_height="21dp"
+        android:background="@android:color/black"
+        android:gravity="center_horizontal"
+        android:text="@string/coordinates"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84000003" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="341dp"
+        android:layout_height="331dp"
+        app:layout_constraintBottom_toTopOf="@+id/radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/N1"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateN"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/W1"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateW"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="303dp"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/N2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateN"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/W2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateW"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/N3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateN"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/W3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateW"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/N4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateN"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/W4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateW"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/N5"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateN"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/W5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateW"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/N6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateN"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/W6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateW"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/N7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateN"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/W7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="#dcdcdc"
+                android:hint="@string/coordinateW"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:visibility="gone" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="351dp"
+        android:layout_height="365dp"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center_horizontal"
+        android:text="@string/location"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
